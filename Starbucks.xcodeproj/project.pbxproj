@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B6D7466292258CE00243591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D7465292258CE00243591 /* AppDelegate.swift */; };
+		5B6D746F292258D000243591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B6D746E292258D000243591 /* Assets.xcassets */; };
+		5B6D7472292258D000243591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6D7470292258D000243591 /* LaunchScreen.storyboard */; };
+		5B6D747B2922737600243591 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D747A2922737600243591 /* Coordinator.swift */; };
+		5B6D747F2922757B00243591 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D747E2922757B00243591 /* TabBarViewController.swift */; };
+		5B8809592929839B00DDA4D6 /* StarAndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8809582929839B00DDA4D6 /* StarAndPoint.swift */; };
+		5B88095B2929875600DDA4D6 /* StarRewardsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88095A2929875600DDA4D6 /* StarRewardsRow.swift */; };
+		5B88095D29298C2100DDA4D6 /* StarRewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88095C29298C2100DDA4D6 /* StarRewardsView.swift */; };
+		5B88A27B29254D0900EFE832 /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88A27A29254D0900EFE832 /* TileViewController.swift */; };
+		5B88A27E29254D7500EFE832 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88A27D29254D7500EFE832 /* TileView.swift */; };
+		5B88A281292583BF00EFE832 /* RewardTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88A280292583BF00EFE832 /* RewardTileViewController.swift */; };
+		5B88A2832925840900EFE832 /* RewardTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88A2822925840900EFE832 /* RewardTileView.swift */; };
+		5B88A286292586C800EFE832 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88A285292586C800EFE832 /* BalanceView.swift */; };
+		5BC852962926D77F000A2B00 /* RewardGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC852952926D77F000A2B00 /* RewardGraphView.swift */; };
+		5BC9659F2923D313007CCB7A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC9659E2923D313007CCB7A /* AppCoordinator.swift */; };
+		5BC965A22923D4C7007CCB7A /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC965A12923D4C7007CCB7A /* TabBarCoordinator.swift */; };
+		5BC965A52923D918007CCB7A /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC965A42923D918007CCB7A /* HomeCoordinator.swift */; };
+		5BC965A72923D9A4007CCB7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC965A62923D9A4007CCB7A /* HomeViewController.swift */; };
+		5BC965AC2923F00C007CCB7A /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC965AB2923F00C007CCB7A /* ScanViewController.swift */; };
+		5BC965AE2923F032007CCB7A /* ScanCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC965AD2923F032007CCB7A /* ScanCoordinator.swift */; };
+		5BC965B12923FAD7007CCB7A /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC965B02923FAD7007CCB7A /* OrderViewController.swift */; };
+		5BC965B32923FB06007CCB7A /* OrderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC965B22923FB06007CCB7A /* OrderCoordinator.swift */; };
+		5BC965B62923FCD4007CCB7A /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC965B52923FCD4007CCB7A /* GiftViewController.swift */; };
+		5BC965B82923FD07007CCB7A /* GiftCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC965B72923FD07007CCB7A /* GiftCoordinator.swift */; };
+		5BC965BB29240403007CCB7A /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC965BA29240403007CCB7A /* Factories.swift */; };
+		5BC965BD29241B91007CCB7A /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC965BC29241B91007CCB7A /* HomeHeaderView.swift */; };
+		5BD33634292D2C490017FA3B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD3362F292D2C490017FA3B /* HistoryViewController.swift */; };
+		5BD33635292D2C490017FA3B /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD33630292D2C490017FA3B /* HistoryViewModel.swift */; };
+		5BD33636292D2C490017FA3B /* HistoryTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD33631292D2C490017FA3B /* HistoryTransaction.swift */; };
+		5BD33637292D2C490017FA3B /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD33632292D2C490017FA3B /* HistoryService.swift */; };
+		5BD33638292D2C490017FA3B /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD33633292D2C490017FA3B /* HistoryViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B6D7462292258CE00243591 /* Starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B6D7465292258CE00243591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B6D746E292258D000243591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B6D7471292258D000243591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B6D7473292258D000243591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B6D747A2922737600243591 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5B6D747E2922757B00243591 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		5B8809582929839B00DDA4D6 /* StarAndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarAndPoint.swift; sourceTree = "<group>"; };
+		5B88095A2929875600DDA4D6 /* StarRewardsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRewardsRow.swift; sourceTree = "<group>"; };
+		5B88095C29298C2100DDA4D6 /* StarRewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRewardsView.swift; sourceTree = "<group>"; };
+		5B88A27A29254D0900EFE832 /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
+		5B88A27D29254D7500EFE832 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		5B88A280292583BF00EFE832 /* RewardTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileViewController.swift; sourceTree = "<group>"; };
+		5B88A2822925840900EFE832 /* RewardTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileView.swift; sourceTree = "<group>"; };
+		5B88A285292586C800EFE832 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		5BC852952926D77F000A2B00 /* RewardGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardGraphView.swift; sourceTree = "<group>"; };
+		5BC9659E2923D313007CCB7A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		5BC965A12923D4C7007CCB7A /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		5BC965A42923D918007CCB7A /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		5BC965A62923D9A4007CCB7A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5BC965AB2923F00C007CCB7A /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		5BC965AD2923F032007CCB7A /* ScanCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCoordinator.swift; sourceTree = "<group>"; };
+		5BC965B02923FAD7007CCB7A /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		5BC965B22923FB06007CCB7A /* OrderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoordinator.swift; sourceTree = "<group>"; };
+		5BC965B52923FCD4007CCB7A /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
+		5BC965B72923FD07007CCB7A /* GiftCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCoordinator.swift; sourceTree = "<group>"; };
+		5BC965BA29240403007CCB7A /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
+		5BC965BC29241B91007CCB7A /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		5BD3362F292D2C490017FA3B /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		5BD33630292D2C490017FA3B /* HistoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		5BD33631292D2C490017FA3B /* HistoryTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTransaction.swift; sourceTree = "<group>"; };
+		5BD33632292D2C490017FA3B /* HistoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		5BD33633292D2C490017FA3B /* HistoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B6D745F292258CE00243591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B6D7459292258CE00243591 = {
+			isa = PBXGroup;
+			children = (
+				5B6D7464292258CE00243591 /* Starbucks */,
+				5B6D7463292258CE00243591 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B6D7463292258CE00243591 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B6D7462292258CE00243591 /* Starbucks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B6D7464292258CE00243591 /* Starbucks */ = {
+			isa = PBXGroup;
+			children = (
+				5BC965B9292403E9007CCB7A /* Factories */,
+				5BC9659D2923D305007CCB7A /* App */,
+				5B6D7480292276DC00243591 /* Base */,
+				5BC965A02923D4AD007CCB7A /* TabBar */,
+				5BC965A32923D8FF007CCB7A /* Coordinator&Controllers */,
+				5B6D74792922599800243591 /* File */,
+			);
+			path = Starbucks;
+			sourceTree = "<group>";
+		};
+		5B6D74792922599800243591 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				5B6D746E292258D000243591 /* Assets.xcassets */,
+				5B6D7470292258D000243591 /* LaunchScreen.storyboard */,
+				5B6D7473292258D000243591 /* Info.plist */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		5B6D7480292276DC00243591 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5B6D747A2922737600243591 /* Coordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5B8809572929837E00DDA4D6 /* StarReward */ = {
+			isa = PBXGroup;
+			children = (
+				5B8809582929839B00DDA4D6 /* StarAndPoint.swift */,
+				5B88095A2929875600DDA4D6 /* StarRewardsRow.swift */,
+				5B88095C29298C2100DDA4D6 /* StarRewardsView.swift */,
+			);
+			path = StarReward;
+			sourceTree = "<group>";
+		};
+		5B88A27929254C5100EFE832 /* TileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5B88A27A29254D0900EFE832 /* TileViewController.swift */,
+				5B88A27C29254D6A00EFE832 /* View */,
+			);
+			path = TileViewController;
+			sourceTree = "<group>";
+		};
+		5B88A27C29254D6A00EFE832 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B88A27D29254D7500EFE832 /* TileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B88A27F2925839C00EFE832 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				5B88A280292583BF00EFE832 /* RewardTileViewController.swift */,
+				5B88A2822925840900EFE832 /* RewardTileView.swift */,
+				5B88A284292586AB00EFE832 /* SmallView */,
+				5BC852952926D77F000A2B00 /* RewardGraphView.swift */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		5B88A284292586AB00EFE832 /* SmallView */ = {
+			isa = PBXGroup;
+			children = (
+				5B88A285292586C800EFE832 /* BalanceView.swift */,
+			);
+			path = SmallView;
+			sourceTree = "<group>";
+		};
+		5BC9659D2923D305007CCB7A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5B6D7465292258CE00243591 /* AppDelegate.swift */,
+				5BC9659E2923D313007CCB7A /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5BC965A02923D4AD007CCB7A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5B6D747E2922757B00243591 /* TabBarViewController.swift */,
+				5BC965A12923D4C7007CCB7A /* TabBarCoordinator.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		5BC965A32923D8FF007CCB7A /* Coordinator&Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BC965A82923EFCF007CCB7A /* HomeCoordinator */,
+				5BC965AA2923EFE8007CCB7A /* ScanCoordinator */,
+				5BC965AF2923FAC1007CCB7A /* OrderCoordinator */,
+				5BC965B42923FCC3007CCB7A /* GiftController */,
+			);
+			path = "Coordinator&Controllers";
+			sourceTree = "<group>";
+		};
+		5BC965A82923EFCF007CCB7A /* HomeCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5BD3362E292D2C250017FA3B /* HistoryTile */,
+				5B8809572929837E00DDA4D6 /* StarReward */,
+				5BC965A42923D918007CCB7A /* HomeCoordinator.swift */,
+				5BC965A62923D9A4007CCB7A /* HomeViewController.swift */,
+				5B88A27929254C5100EFE832 /* TileViewController */,
+				5B88A27F2925839C00EFE832 /* Rewards */,
+			);
+			path = HomeCoordinator;
+			sourceTree = "<group>";
+		};
+		5BC965AA2923EFE8007CCB7A /* ScanCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5BC965AB2923F00C007CCB7A /* ScanViewController.swift */,
+				5BC965AD2923F032007CCB7A /* ScanCoordinator.swift */,
+			);
+			path = ScanCoordinator;
+			sourceTree = "<group>";
+		};
+		5BC965AF2923FAC1007CCB7A /* OrderCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5BC965B02923FAD7007CCB7A /* OrderViewController.swift */,
+				5BC965B22923FB06007CCB7A /* OrderCoordinator.swift */,
+			);
+			path = OrderCoordinator;
+			sourceTree = "<group>";
+		};
+		5BC965B42923FCC3007CCB7A /* GiftController */ = {
+			isa = PBXGroup;
+			children = (
+				5BC965B52923FCD4007CCB7A /* GiftViewController.swift */,
+				5BC965B72923FD07007CCB7A /* GiftCoordinator.swift */,
+			);
+			path = GiftController;
+			sourceTree = "<group>";
+		};
+		5BC965B9292403E9007CCB7A /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				5BC965BA29240403007CCB7A /* Factories.swift */,
+				5BC965BC29241B91007CCB7A /* HomeHeaderView.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		5BD3362E292D2C250017FA3B /* HistoryTile */ = {
+			isa = PBXGroup;
+			children = (
+				5BD33632292D2C490017FA3B /* HistoryService.swift */,
+				5BD33631292D2C490017FA3B /* HistoryTransaction.swift */,
+				5BD33633292D2C490017FA3B /* HistoryViewCell.swift */,
+				5BD3362F292D2C490017FA3B /* HistoryViewController.swift */,
+				5BD33630292D2C490017FA3B /* HistoryViewModel.swift */,
+			);
+			path = HistoryTile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B6D7461292258CE00243591 /* Starbucks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B6D7476292258D000243591 /* Build configuration list for PBXNativeTarget "Starbucks" */;
+			buildPhases = (
+				5B6D745E292258CE00243591 /* Sources */,
+				5B6D745F292258CE00243591 /* Frameworks */,
+				5B6D7460292258CE00243591 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starbucks;
+			productName = Starbucks;
+			productReference = 5B6D7462292258CE00243591 /* Starbucks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B6D745A292258CE00243591 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					5B6D7461292258CE00243591 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 5B6D745D292258CE00243591 /* Build configuration list for PBXProject "Starbucks" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B6D7459292258CE00243591;
+			productRefGroup = 5B6D7463292258CE00243591 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B6D7461292258CE00243591 /* Starbucks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B6D7460292258CE00243591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B6D7472292258D000243591 /* LaunchScreen.storyboard in Resources */,
+				5B6D746F292258D000243591 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B6D745E292258CE00243591 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC965BB29240403007CCB7A /* Factories.swift in Sources */,
+				5B88A286292586C800EFE832 /* BalanceView.swift in Sources */,
+				5B88A2832925840900EFE832 /* RewardTileView.swift in Sources */,
+				5B88A281292583BF00EFE832 /* RewardTileViewController.swift in Sources */,
+				5BD33636292D2C490017FA3B /* HistoryTransaction.swift in Sources */,
+				5BC965AC2923F00C007CCB7A /* ScanViewController.swift in Sources */,
+				5BC9659F2923D313007CCB7A /* AppCoordinator.swift in Sources */,
+				5B88A27E29254D7500EFE832 /* TileView.swift in Sources */,
+				5BC965AE2923F032007CCB7A /* ScanCoordinator.swift in Sources */,
+				5B8809592929839B00DDA4D6 /* StarAndPoint.swift in Sources */,
+				5BC965A52923D918007CCB7A /* HomeCoordinator.swift in Sources */,
+				5BC965B82923FD07007CCB7A /* GiftCoordinator.swift in Sources */,
+				5BD33635292D2C490017FA3B /* HistoryViewModel.swift in Sources */,
+				5BC965BD29241B91007CCB7A /* HomeHeaderView.swift in Sources */,
+				5BD33637292D2C490017FA3B /* HistoryService.swift in Sources */,
+				5BC852962926D77F000A2B00 /* RewardGraphView.swift in Sources */,
+				5BD33634292D2C490017FA3B /* HistoryViewController.swift in Sources */,
+				5BC965B62923FCD4007CCB7A /* GiftViewController.swift in Sources */,
+				5BC965A22923D4C7007CCB7A /* TabBarCoordinator.swift in Sources */,
+				5B6D7466292258CE00243591 /* AppDelegate.swift in Sources */,
+				5B6D747F2922757B00243591 /* TabBarViewController.swift in Sources */,
+				5BD33638292D2C490017FA3B /* HistoryViewCell.swift in Sources */,
+				5B6D747B2922737600243591 /* Coordinator.swift in Sources */,
+				5BC965B32923FB06007CCB7A /* OrderCoordinator.swift in Sources */,
+				5B88095B2929875600DDA4D6 /* StarRewardsRow.swift in Sources */,
+				5BC965B12923FAD7007CCB7A /* OrderViewController.swift in Sources */,
+				5B88095D29298C2100DDA4D6 /* StarRewardsView.swift in Sources */,
+				5BC965A72923D9A4007CCB7A /* HomeViewController.swift in Sources */,
+				5B88A27B29254D0900EFE832 /* TileViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B6D7470292258D000243591 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B6D7471292258D000243591 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B6D7474292258D000243591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B6D7475292258D000243591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B6D7477292258D000243591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QC3UAHVPF7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Starbucks/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zardasht.Starbucks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B6D7478292258D000243591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QC3UAHVPF7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Starbucks/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zardasht.Starbucks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B6D745D292258CE00243591 /* Build configuration list for PBXProject "Starbucks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B6D7474292258D000243591 /* Debug */,
+				5B6D7475292258D000243591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B6D7476292258D000243591 /* Build configuration list for PBXNativeTarget "Starbucks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B6D7477292258D000243591 /* Debug */,
+				5B6D7478292258D000243591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B6D745A292258CE00243591 /* Project object */;
+}
